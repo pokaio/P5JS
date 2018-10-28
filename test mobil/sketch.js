@@ -1,11 +1,17 @@
-var value = 0;
-function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
+let r;
+let g;
+let b;
+
+function setup() {
+  createCanvas(600, 400);
 }
+
+function draw() {
+  background(r, g, b)
+}
+
 function deviceShaken() {
-  value = value + 5;
-  if (value > 255) {
-    value = 0;
-  }
+  r = random(0, 255);
+  g = random(0, 255);
+  b = random(0, 255);
 }
