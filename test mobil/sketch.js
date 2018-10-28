@@ -3,7 +3,7 @@ let g;
 let b;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1000, 1200);
 }
 
 function draw() {
